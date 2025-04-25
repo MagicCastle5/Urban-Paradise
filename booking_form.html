@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Room Booking</title>
+</head>
+<body bgcolor="#ADD8E6">
+<p align="right"><a href="login.html" target="_self">Log in</a></p>
+<h2>Hotel Room Booking</h2>
+
+<form action="" method="get">
+
+<fieldset>
+	<legend>Personal Information:</legend>
+
+	<label for="first_name">First Name:</label>
+	<input type="text" id="first_name" name="first_name" value="Your Name" size="10" maxlength="20">
+	<br><br>
+
+	<label for="last_name">Last Name:</label>
+	<input type="text" id="last_name" name="last_name" placeholder="Last Name">
+	<br><br>
+</fieldset><br><br>
+
+
+<fieldset>
+	<legend>Booking Information:</legend>
+
+	<label> Select Your Need(s): </label><br>
+
+	<input type="checkbox" id="wifi" name="need1" value="wifi" checked>
+	<label for="wifi">Wi-Fi</label><br>
+
+	<input type="checkbox" id="breakfast" name="need2" value="breakfast">
+	<label for="breakfast">Breakfast</label><br>
+
+	<input type="checkbox" id="pool" name="need3" value="pool">
+	<label for="pool">Pool Access</label><br><br>
+
+	
+	<label>Select Room Type:</label>
+	<select name="room_type" size="3" multiple="multiple">
+		<option value="deluxe" selected>Deluxe Room</option>
+		<option value="executive">Executive Suite</option>
+		<option value="presidential">Presidential Suite</option>
+		<option value="family">Family Room</option>
+		<option value="penthouse">Penthouse Loft</option>
+	</select><br><br>
+
+	<label for="comment"> Enter Any Additional Information:</label> <br>
+	<textarea rows="5" cols="60" id="comment" name="description" maxlength="600" required>
+	</textarea><br><br>
+</fieldset><br><br>
+
+
+<fieldset>
+	<legend>Dates:</legend>
+
+	<label for="checkin">Select Check-In Date:</label>
+	<input type="date" id="checkin" name="checkin" max="2028-12-31" min="2025-04-07">
+	<br><br>
+
+	<label for="checkout">Select Check-Out Date:</label>
+	<input type="date" id="checkout" name="checkout" max="2028-12-31" min="2025-04-07">
+	<br><br>
+</fieldset><br><br>
+
+
+<fieldset>
+	<legend>Information About Guest(s):</legend>
+	
+	<label for="number">Enter the Number of Guest(s):</label>
+	<input type="number" id="number" name="no_of_guests" min="1" max="15">
+	<br><br>
+	
+	<label for="images">Image(s) of ID(s) of Guest(s):</label>
+	<input type="file" id="images" name="nic" accept="image/*" multiple>
+	<br><br>
+	
+	<input type="hidden" name="custId" value="3487">
+</fieldset><br><br>
+
+
+<fieldset>
+	<legend>Payment:</legend>
+	
+ 	<label>Select Payment Option:</label><br>
+
+	<input type="radio" id="booking" name="payment" value="at_booking" checked>
+	<label for="booking">Pay Now</label><br>
+
+	<input type="radio" id="hotel" name="payment" value="on_arrival">
+	<label for="hotel">Pay at Hotel</label><br><br>
+
+	<label for="ok">This Payment is Not Refundable.</label>
+	<input type="button" id="ok" name="ok" value="OK"><br><br>
+</fieldset><br><br>
+
+
+	<label for="download">Download a Copy of Your Submitted Form.</label>
+	<input type="image" id="download" name="download" src="download_button.jpg">
+	<br><br><br>
+
+
+	<input type="reset" value="Clear Form">
+	<input type="submit" value="Book Now!">
+</form>
+
+</body>
+</html>
